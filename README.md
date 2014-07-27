@@ -58,6 +58,10 @@ Setup:
 						If there where no errors (Informations & Warnings are ok, if the is an Compilation succeeded at the end ;) )
 						Now u can use mono to run the newly created exe on youre Ubuntu (or other Unix) machine (Parameter same like them for WIN)
 							>> $ mono Server.exe youre-domain.com 81
+						
+						TIP: If u want to run this in background e.g. on a VPS and dont wanne keept putty open, u can do this:
+							>> $ apt-get install mono-complete
+							>> $ mono-service -d:/youre/path/to/exe Server.exe youre-domain.com 81 & (Dont forget the &-sign ;) )
 							
 							
 						THATS IT !
