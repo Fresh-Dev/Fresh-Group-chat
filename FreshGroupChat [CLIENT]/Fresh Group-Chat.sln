@@ -1,0 +1,58 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshGroupChat [CLIENT]", "FreshGroupChat [CLIENT].csproj", "{BC1222F7-452B-4921-B6D4-C666D02D1227}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth", "Auth", "{F3EB5C58-2B85-49BA-9BD8-A0EFD92BF918}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\.buildpath = ..\..\Desktop\Neuer Ordner\Neuer Ordner\.buildpath
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\.project = ..\..\Desktop\Neuer Ordner\Neuer Ordner\.project
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\index.php = ..\..\Desktop\Neuer Ordner\Neuer Ordner\index.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user", "user", "{02B60FC8-27A2-4FF3-8ADD-1573E4484F26}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\user\index.php = ..\..\Desktop\Neuer Ordner\Neuer Ordner\user\index.php
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\user\user.txt = ..\..\Desktop\Neuer Ordner\Neuer Ordner\user\user.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{004101E5-D354-44C3-9230-AC5546D2F47A}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\inc\config.php = ..\..\Desktop\Neuer Ordner\Neuer Ordner\inc\config.php
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\inc\MyTXT.php = ..\..\Desktop\Neuer Ordner\Neuer Ordner\inc\MyTXT.php
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\inc\tools.php = ..\..\Desktop\Neuer Ordner\Neuer Ordner\inc\tools.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "chatlog", "chatlog", "{057B1F83-200A-4E02-82F1-0F98089F7ED0}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\chatlog\index.php = ..\..\Desktop\Neuer Ordner\Neuer Ordner\chatlog\index.php
+		..\..\Desktop\Neuer Ordner\Neuer Ordner\chatlog\log.txt = ..\..\Desktop\Neuer Ordner\Neuer Ordner\chatlog\log.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshGroupChat [SERVER]", "..\FrashGroupChat [SERVER]\FreshGroupChat [SERVER].csproj", "{3CFB4393-32C2-4D62-B952-8DE9AC90C097}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{02B60FC8-27A2-4FF3-8ADD-1573E4484F26} = {F3EB5C58-2B85-49BA-9BD8-A0EFD92BF918}
+		{004101E5-D354-44C3-9230-AC5546D2F47A} = {F3EB5C58-2B85-49BA-9BD8-A0EFD92BF918}
+		{057B1F83-200A-4E02-82F1-0F98089F7ED0} = {F3EB5C58-2B85-49BA-9BD8-A0EFD92BF918}
+	EndGlobalSection
+EndGlobal

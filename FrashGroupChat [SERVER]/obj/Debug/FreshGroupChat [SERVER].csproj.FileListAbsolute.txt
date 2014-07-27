@@ -1,0 +1,5 @@
+C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FrashGroupChat [SERVER]\bin\Debug\FrashGroupChat [SERVER].exe.config
+C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FrashGroupChat [SERVER]\bin\Debug\FrashGroupChat [SERVER].exe
+C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FrashGroupChat [SERVER]\bin\Debug\FrashGroupChat [SERVER].pdb
+C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FrashGroupChat [SERVER]\obj\Debug\FrashGroupChat [SERVER].exe
+C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FrashGroupChat [SERVER]\obj\Debug\FrashGroupChat [SERVER].pdb

@@ -1,0 +1,6 @@
+I:\C#\FrashGroupChat [SERVER]\obj\Release\FreshGroupChat [SERVER].csprojResolveAssemblyReference.cache
+I:\C#\FrashGroupChat [SERVER]\bin\Release\FrashGroupChat [SERVER].exe.config
+I:\C#\FrashGroupChat [SERVER]\bin\Release\FrashGroupChat [SERVER].exe
+I:\C#\FrashGroupChat [SERVER]\bin\Release\FrashGroupChat [SERVER].pdb
+I:\C#\FrashGroupChat [SERVER]\obj\Release\FrashGroupChat [SERVER].exe
+I:\C#\FrashGroupChat [SERVER]\obj\Release\FrashGroupChat [SERVER].pdb

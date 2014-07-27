@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshGroupChat [CLIENT]", "FreshGroupChat [CLIENT]\FreshGroupChat [CLIENT].csproj", "{BC1222F7-452B-4921-B6D4-C666D02D1227}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FreshGroupChat [SERVER]", "FrashGroupChat [SERVER]\FreshGroupChat [SERVER].csproj", "{3CFB4393-32C2-4D62-B952-8DE9AC90C097}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Auth (PHP)", "Auth (PHP)", "{7010DF84-EABC-4E47-9F05-AF6BC5489B8D}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\index.php = ..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\index.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "user", "user", "{79CB7CA5-79E9-40BD-96EF-8163ECA97EC1}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\user\index.php = ..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\user\index.php
+		..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\user\user.txt = ..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\user\user.txt
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "inc", "inc", "{D01B094C-0773-4D8F-8B3F-441F036BF7BD}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\inc\config.php = ..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\inc\config.php
+		..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\inc\MyTXT.php = ..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\inc\MyTXT.php
+		..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\inc\tools.php = ..\..\..\GitHub\Fresh-Group-chat\Auth (PHP)\inc\tools.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NewFolder1", "NewFolder1", "{54C822F7-04A0-4D76-B4E8-6B27749735EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC1222F7-452B-4921-B6D4-C666D02D1227}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CFB4393-32C2-4D62-B952-8DE9AC90C097}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{79CB7CA5-79E9-40BD-96EF-8163ECA97EC1} = {7010DF84-EABC-4E47-9F05-AF6BC5489B8D}
+		{D01B094C-0773-4D8F-8B3F-441F036BF7BD} = {7010DF84-EABC-4E47-9F05-AF6BC5489B8D}
+	EndGlobalSection
+EndGlobal
