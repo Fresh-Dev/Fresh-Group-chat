@@ -1,70 +1,115 @@
 Fresh-Group-chat
 ================
-
-
 C# Groupchat with PHP Registration and manual HWID Request
+--
+___
+### Project is made of 3 parts###
+1. Server 
+      - C-Sharp Console Application - Mono Compatible (tested on Ubuntu 12.04)
+2. Authentification  Module
+      - PHP-Based, SHA256Encrypted passwords, alternative database model (*See bottom*)
+        - Future planned WWW-registration possibillity    
+3. Chat-Client
+      - C-Sharp WinForm Application (*Including huge custom formelements-class*)
+        - Login / Registration / HWID Check
+        - Smiley-Support
+        - Hyperlink-support
+        - Desktop-Notifications
+        
+### General Server Requirements & Prepareations ###
+- Webserver with PHP-Support and MCrypt installed & enabled
+- Port forwarding for a port of you're choice
+- Windows with .net Framework 3.5 or higher or a Mono-Compatible Unix Platform (*Like e.g. Ubuntu 12.04*)
 
-Project is made of 3 parts:
+### General Client Requirements ###
+- Windows with .net Framework 4.0 or higher
+- Internet Access
 
-1. Server (C# - Mono Compatible (Iself run it on Ubuntu 12.04 with Mono))
-2. Authentification  Module (PHP)
-3. Chat-Client with Login, a few common smileys and hyperlink highlighting and following
+___
+### Setup###
+#### Authentification Server ####
+- Upload the Auth-Folder's content to web-server (*u may want to place them in a subdirectory, it's ok*)
+- Grant CHMOD 0777 on **user/user.txt**
+- Open **inc/config.php**
+    - ```php 
+     /**  
+       *  Location of registred user-credentials-file, 
+       *    if you want to change path or name, remember, 
+       *    to give this file Write-Rights
+       */
+    var $Userfile = "user/user.txt"; 
+    ```
+    - ```php 
+     /**
+	 * Set these to random values
+	 */
+	var $ky = 'S0M3TH!NG_R4ND0M_H3R3';
+	var $iv = '@ND_H3R3_4LS0';
+    ```
 
-Setup:
-1. (Client) Open VS-Project File, and navigate to -> FreshGroupChat [CLIENT] 
-2. (Client) Open the -> FreshGroupChat.settings file.
-		server and port => location of the server used for FreshGroupChat [SERVER] and the selected port (later more)
-		hwid: can stay empty
-		username:
-			firstRun -> Opens the Registration Form, there a request to the authentification part will be send, HWID is known or not.
-							If Hwid is unknown, Username & Password Fields stay invisible, until an administrator added the HWID to the WhiteList, 
-							if the HWID is known, the user is allowed to register
-			After registration the value will be the registered username
-		authUrl: Location of the authentification server
-		authUrl(Boolean): HWID must be on whitelist or not 
-		needRegistration(Boolean): Allow Guests to use it if false
-3. (Client) Compile (This part is done)
-		
-4. (Authentification) Upload the Auth-Folder's content to an PHP-Enabled Web-Server, grant CHMOD 777 on /user/user.txt (Account-Values as txt-database to keep it "movable", 
-			passwords will be encrypted with custom salt and key values (set in config.php, where HWID also will be added on whitelist ;))
-			
-5.1 (Server) WINDOWS: Open commandline and navigate to server's /bin/release folder, run "A51 TeamChat [SERVER].exe" with the the following parameter:
-							"A51 TeamChat [SERVER].exe" youre-server.com 81 
-								where 81 would be the used TCP Port for the Chat-Application (Must be identical with Client's).
-								
-5.2 (Server)  UBUNTU (May other unix too):
-						
-						Make sure apt-get is up 2 date
-							>> $ apt-get update
-							>> $ apt-get upgrade
-						
-						Now Install Mono-Develop and mono-mcs
-							>> $ apt-get install monodevelop
-							>> $ apt-get install mono-mcs
-						
-						Create a new folder (I will do in /root)
-							>> $ mkdir /root/chatserver/
-							
-						Copy Server's Programm.cs file as Server.cs in chatserver/ directory, or vim a new file and copy the content (like I do)
-							>> $ vim Server.cs
-								press "i" for insert mode
-								-Copy Paste the content- (Putty -> Rightclick to paste)
-									ESC to end input mode
-									:wq! to save and quit
-									
-						Compile Server.cs file:
-							>> $ mcs Server.cs
-							
-						If there where no errors (Informations & Warnings are ok, if the is an Compilation succeeded at the end ;) )
-						Now u can use mono to run the newly created exe on youre Ubuntu (or other Unix) machine (Parameter same like them for WIN)
-							>> $ mono Server.exe youre-domain.com 81
-						
-						TIP: If u want to run this in background e.g. on a VPS and dont wanne keept putty open, u can do this:
-							>> $ apt-get install mono-complete
-							>> $ mono-service -d:/youre/path/to/exe Server.exe youre-domain.com 81 & (Dont forget the &-sign ;) )
-							
-							
-						THATS IT !
+ - ```php 
+    /**
+	 * Allowed HWID's add by hand the allowed one returned from first-run of client. 
+	 * (CPU-Serial) the two inserted are just for demonstration (Check can be diabled soon)
+	 */
+	var $machineIDs = array(
+		"BAEBFBFF000306C1",
+		"FFEBFBFF000206D1"
+	);
+    ```
+##### The authentification server is now ready ! Please note down the URL to index.php  #####
+
+#### Compile Project (*With Visual Studio 2013*) ####
+
+- Open VS-Project File
+    - Navigate to **FreshGroupChat [CLIENT]** in Projectexplorer
+    - Open: **FreshGroupChat.settings**
+		- **server**:*IP/Hostname of the machine where server will be executed later*
+        - **port**: *A free port (TCP) the chatserver will use later*
+        - **hwid**: can stay empty
+        - **username**: *"firstRun" (this will let the registration form open on start)*
+        - **authUrl**: Location of the authentification server's index.php
+        - **needHwid**: (*Planned Feature  more infos soon*)
+        - **needRegistration**: (*Planned Feature  more infos soon*)
+    - Press **F6** for compile the whole project 
+        - Client-Binary location: **/FreshGroupChat [CLIENT]/bin/Release/**
+        - Server (*For Windows machines*): **/FreshGroupChat [SERVER]/bin/Release/** 
+            - *If u want to use on UNIX Systems read chapter **Server on UNIX with MONO***
+            
+
+#### Run Server on Windows ####
+- Open CommandLine
+- Navigate to Server's path
+- Enter: **<Serverbinary's name> <server's hostname or domain> <port to use>
+
+#### Server on UNIX with MONO #### 
+- Make sure apt-get is up 2 date
+    - ```sh 
+    apt-get update
+    apt-get upgrade
+   ```
+- Now Install Mono-Develop and mono-mcs
+    - ```sh 
+      apt-get install monodevelop
+	  apt-get install mono-mcs
+   ```
+- Create a new folder (I will do in /root)
+    - ```sh 
+      mkdir /root/chatserver/
+   ```
+- Copy Server's Programm.cs file as Server.cs in chatserver/ directory, or vim a new file and copy the content (like I do)
+    - ```sh 
+      vim Server.cs
+   ```
+- Compile Server.cs file:
+    - ```sh 
+      mcs Server.cs
+   ```
+- Execute Server:
+    - ```sh 
+      mono Server.exe youre-domain.com 81
+   ```
+#THATS IT !#
 						
 							
 							

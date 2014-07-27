@@ -8,3 +8,6 @@ C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FreshGro
 C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FreshGroupChat [CLIENT]\obj\Debug\FreshGroupChat [CLIENT].csproj.GenerateResource.Cache
 C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FreshGroupChat [CLIENT]\obj\Debug\FreshGroupChat.exe
 C:\Users\FreshDev\Documents\Visual Studio 2013\Projects\Fresh-Groupchat\FreshGroupChat [CLIENT]\obj\Debug\FreshGroupChat.pdb
+C:\Users\FreshDev\Documents\GitHub\Fresh-Group-chat\FreshGroupChat [CLIENT]\bin\Debug\FreshGroupChat.exe.config
+C:\Users\FreshDev\Documents\GitHub\Fresh-Group-chat\FreshGroupChat [CLIENT]\obj\Debug\FreshGroupChat.exe
+C:\Users\FreshDev\Documents\GitHub\Fresh-Group-chat\FreshGroupChat [CLIENT]\obj\Debug\FreshGroupChat.pdb
